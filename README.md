@@ -29,6 +29,7 @@ The key responsibilities and steps involved in the project were:
   
 **5.	Evaluation and comparison**
 -	Both models were tested using ROC curves and classification metrics to compare performance.
+-	Model 1 presented higher accuracy and lower loss values compared to Model 2. It also achieved a higher AUC (0.88) in constrast to Model 2 (0.81), as well as a better accuracy score in the confusion matrix. 
   
 **6.	Conclusion**
-
+Overall, Model 1 outperformed Model 2 across multiple metrics, demonstrating a superior ability to discriminate between normal and pathological radiographs.
