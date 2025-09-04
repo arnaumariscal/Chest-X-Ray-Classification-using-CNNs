@@ -1,35 +1,24 @@
 # **Chest-X-Ray-Classification-using-CNNs**
 
-## Project Statement:
+## Overview:
 
-As part of a Machine Learning module within a Bioinformatics and Biostatistics Master’s program, this project consisted of a binary image classification problem: distinguishing between normal chest X-rays and those showing signs of pleural effusion. The dataset was based on a subset of 700 labelled radiographs (350 normal and 350 with pleural effusion), extracted from the publicly available NIH ChestXray14 dataset:
+The project designs and evaluates two convolutional neural networks (CNNs) for the classification of chest X-ray images: normal and with pleural effusion.
+This binary image classification problem was part of a Machine Learning module within a Bioinformatics and Biostatistics Master’s program. 
 
+The dataset was based on the publicly available NIH ChestXray14 dataset:
 https://www.nih.gov/news-events/news-releases/nih-clinical-center-provides-one-largest-publiclyavailable-chest-x-ray-datasets-scientific-community.
 
-The objective was to design, implement, and evaluate two convolutional neural networks (CNNs) for the classification of chest X-ray images. The final step was to select the best-performing architecture based on classification metrics and ROC curve analysis.
+Model 1 outperformed Model 2 across multiple metrics, demonstrating a superior ability to discriminate between normal and pathological radiographs.
 
-The key responsibilities and steps involved in the project were:
+## Methodology
 
-**1.	Data import and exploration**
-- The radiographs were provided in two compressed folders: one for normal cases and one for pleural effusion. Sample images from both folders were presented.
-  
-**2.	Image preprocessing**
--	All images were resized from 512x512x3 to64x64x1, keeping only one grayscale channel, since all three RGB channels contained the same information. 
--	Normalization was performed, using min-max scaling.
-  
-**3.	Data splitting**
--	The dataset was divided into training and testing subsets, maintaining class balance, with 600 images for training and 100 for testing.
-  
-**4.	Model development**. Two different CNN models were built using Python with the following instructions:
--	Both models included no more than 6 convolutional layers
--	Pooling layers to reduce computational complexity
--	Two fully connected layers with 128 and 32 neurons
-- The output layer used a sigmoid activation function to predict the binary outcome (normal vs. effusion)
--	Each model was designed with at least 60.000 trainable parameters to meet minimum complexity requirements
-  
-**5.	Evaluation and comparison**
--	Both models were tested using ROC curves and classification metrics to compare performance.
--	Model 1 presented higher accuracy and lower loss values compared to Model 2. It also achieved a higher AUC (0.88) in constrast to Model 2 (0.81), as well as a better accuracy score in the confusion matrix. 
-  
-**6.	Conclusion**
-- Overall, Model 1 outperformed Model 2 across multiple metrics, demonstrating a superior ability to discriminate between normal and pathological radiographs.
+1.	**Data import and exploration**
+2.	**Image preprocessing**. All images were resized from 512x512x3 to 64x64x1, normalized and only one grayscale channel was kept.
+3.	**Data splitting**. 600 training / 100 test images
+4.	**Model development**. Two CNN models: ≤6 convolutional layers, pooling layers, 2 fully connected layers, >60K trainable parameters, sigmoid output.
+5.	**Evaluation and comparison**: quality metrics and ROC curve analysis.
+
+## Key results
+
+## Repository structure
+
