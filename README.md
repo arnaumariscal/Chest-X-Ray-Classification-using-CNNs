@@ -6,7 +6,9 @@ This project designs and evaluates two convolutional neural networks (CNNs) for 
 This binary image classification problem was part of a Machine Learning module within a Bioinformatics and Biostatistics Master’s program. 
 
 The dataset was based on a NIH ChestXray dataset available in Kaggle:
+
 https://www.nih.gov/news-events/news-releases/nih-clinical-center-provides-one-largest-publiclyavailable-chest-x-ray-datasets-scientific-community.
+
 https://www.kaggle.com/datasets/nih-chest-xrays/data
 
 Model 1 outperformed Model 2 across multiple metrics, demonstrating a superior ability to discriminate between normal and pathological radiographs.
